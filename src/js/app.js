@@ -1,9 +1,9 @@
 $(function() {
-  let app = document.createTextNode('lorem ipsum ');
+  let textNode = document.createTextNode('lorem ipsum ');
   for (let i = 0; i < 600; i++) {
-    app += 'lorem ipsum '
+    textNode += 'lorem ipsum '
   }
-  $('.link-wrapper, #abc, #def, #ghi').after(app);
+  $('.link-wrapper, #abc, #def, #ghi').after(textNode);
 
   $("a[href^='#']").click(function() {
     const speed = 400;
